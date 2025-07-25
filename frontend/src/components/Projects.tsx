@@ -1,22 +1,6 @@
-const Projects = () => {
-    const projects = [
-        {
-            id: 1,
-            title: "GIT TEACH",
-            year: "2025",
-            description: "Started out as a CLI-based RAG agent semantically analysing GitHub repositories using custom tokenization, attention-based clustering to generate personalized build guides.",
-            image: "project_previews/git_teach_preview.png",
-            tags: ["Next.js", "VectorDB", "custom AST chunking"],
-            visitLink: "https://github.com/anamikararecare/git-teach-v1" // Replace with actual URL
-        }
-        // Add more projects here as needed
-    ];
+import { projects, skills, langs } from "../../constants/index";
 
-    const skills = [
-        "Python", "PyTorch", "Django", "NumPy", "pandas", "MatPlotLib",
-        "yfinance", "JavaScript", "React.js", "C++", "HTML", "Tailwind CSS",
-        "Swift", "VBA Office"
-    ];
+const Projects = () => {
 
     return (
         <section id="projects" className="w-full">
@@ -34,11 +18,10 @@ const Projects = () => {
                         {/* Skills Tags */}
                         <div className="flex flex-wrap gap-2">
                             {skills.map((skill, index) => {
-                                const isDarkTag = ['Python', 'JavaScript', 'C++', 'Tailwind CSS', 'Swift', 'VBA Office'].includes(skill);
                                 return (
                                     <span
                                         key={index}
-                                        className={`px-2 py-1 rounded text-xs font-medium ${isDarkTag
+                                        className={`px-2 py-1 rounded text-xs font-medium ${langs.includes(skill)
                                             ? 'bg-amber-950 text-amber-50'
                                             : 'bg-amber-50 text-amber-950 stroke-amber-950'
                                             }`}
@@ -76,7 +59,6 @@ const Projects = () => {
                                 <div className="w-full max-w-4xl">
                                     <img
                                         src={project.image}
-                                        alt={`${project.title} preview`}
                                         className="w-full h-auto rounded-lg shadow-lg"
                                     />
                                 </div>

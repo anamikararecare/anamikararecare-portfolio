@@ -19,3 +19,30 @@ export const identityCards = [
     { id: 'advocate', src: '/cards/advocate_card.png', alt: 'Advocate Card' },
     { id: 'dreamer', src: '/cards/dreamer_card.png', alt: 'Dreamer Card' }
 ]
+
+export const projects = [
+    {
+        id: 1,
+        title: "GIT TEACH",
+        year: "2025",
+        description: "Started out as a CLI-based RAG agent semantically analysing GitHub repositories using custom tokenization, attention-based clustering to generate personalized build guides.",
+        image: "project_previews/git_teach_preview.png",
+        tags: ["Next.js", "VectorDB", "custom AST chunking"],
+        visitLink: "https://github.com/anamikararecare/git-teach-v1"
+    },
+    {
+        id: 2,
+        title: "Betting on AI",
+        year: "2025",
+        description: "Three-staged decision intelligence project forecasting stock performance of prominent AI companies. Spoiler: I'm placing my bets on Meta.",
+        image: "project_previews/betting_on_AI_preview.png",
+        tags: ["ARIMA", "LightGBM", "Monte Carlo simulations", "LSTM"],
+        visitLink: "https://docs.google.com/presentation/d/1XR_auFL4JGuUxvyeITJ4kcGy1Wt9m5avV_Ye2t_3uuE/edit?slide=id.p#slide=id.p"
+    }
+]
+
+export const skills = ["Python", "PyTorch", "Django", "NumPy", "pandas", "MatPlotLib",
+    "yfinance", "JavaScript", "React.js", "C++", "HTML", "CSS", "Tailwind CSS",
+    "Swift", "VBA Office"]
+
+export const langs = ['Python', 'JavaScript', 'C++', 'CSS', 'Swift', 'VBA Office', 'HTML']
