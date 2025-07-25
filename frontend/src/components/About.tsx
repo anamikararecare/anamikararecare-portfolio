@@ -2,7 +2,7 @@ import { identityCards } from "../../constants/index";
 
 const About = () => {
     return (
-        <section className="flex flex-col items-center min-h-screen py-20">
+        <section id="about" className="flex flex-col items-center min-h-screen py-20">
             <div className="relative">
                 {/* Text above cards */}
                 <div className="text-center mb-8">

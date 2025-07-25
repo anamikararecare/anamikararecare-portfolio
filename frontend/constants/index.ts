@@ -1,15 +1,16 @@
 export const navLinks = [
-    { id: 'about', title: 'About' },
-    { id: 'projects', title: 'Projects' },
-    { id: 'courses', title: 'Courses' },
-    { id: 'articles', title: 'Articles' },
-    { id: 'experience', title: 'Experience' },
-    { id: 'contact', title: 'Contact' },
-]
+    { id: 'about', title: 'About', type: 'section' },
+    { id: 'projects', title: 'Projects', type: 'route' },
+    { id: 'courses', title: 'Courses', type: 'route' },
+    { id: 'articles', title: 'Articles', type: 'route' },
+    { id: 'experience', title: 'Experience', type: 'section' },
+    { id: 'future', title: 'Future Generator', type: 'section' },
+    { id: 'contact', title: 'Contact', type: 'section' },
+];
 
 export const leftIcons = [
     { id: 'dark-mode', src: '/icons/dark_mode_icon.png', alt: 'Dark Mode Icon' },
-    { id: 'home', src: "/icons/home_icon.png", alt: 'Home Icon' }
+    { id: '/', src: "/icons/home_icon.png", alt: 'Home Icon', type: 'route' }
 ]
 
 export const identityCards = [
@@ -19,6 +20,34 @@ export const identityCards = [
     { id: 'advocate', src: '/cards/advocate_card.png', alt: 'Advocate Card' },
     { id: 'dreamer', src: '/cards/dreamer_card.png', alt: 'Dreamer Card' }
 ]
+
+export const contactCards = [
+    { id: 'builder', src: '/cards/builder_card.png', alt: 'Builder Card' },
+    { id: 'learner', src: '/cards/learner_card.png', alt: 'Learner Card' },
+    { id: 'writer', src: '/cards/writer_card.png', alt: 'Writer Card' },
+    { id: 'advocate', src: '/cards/advocate_card.png', alt: 'Advocate Card' },
+    { id: 'intern', src: '/cards/intern_card.png', alt: 'Intern Card' },
+    { id: 'fullStackWebDev', src: '/cards/full_stack_web_dev_card.png', alt: 'Full-Stack Web Dev Card' },
+    { id: 'aiMl', src: '/cards/ai_ml_card.png', alt: 'AI/ML Card' },
+    { id: 'supplyChain', src: '/cards/supply_chain_card.png', alt: 'Supply Chain Card' },
+    { id: 'appDev', src: '/cards/app_dev_card.png', alt: 'App Dev Card' },
+    { id: 'dataScience', src: '/cards/data_science_card.png', alt: 'Data Science Card' },
+    { id: 'dataEng', src: '/cards/data_eng_card.png', alt: 'Data Engineering Card' },
+    { id: 'product', src: '/cards/product_card.png', alt: 'Product Card' },
+    { id: 'robotics', src: '/cards/robotics_card.png', alt: 'Robotics Card' },
+    { id: 'embeddedSystems', src: '/cards/embedded_systems_card.png', alt: 'Embedded Systems Card' },
+    { id: 'fintech', src: '/cards/fintech_card.png', alt: 'FinTech Card' },
+    { id: 'simulation', src: '/cards/simulation_card.png', alt: 'Simulation Card' },
+    { id: 'builder2', src: '/cards/builder_card.png', alt: 'Builder Card' }
+]
+
+export const socialLinks = {
+    email: 'e1385499@u.nus.edu',
+    gmail: 'anamika.ragu@gmail.com',
+    github: 'https://github.com/anamikararecare',
+    discord: 'https://discord.gg/anamikararecare',
+    linkedin: 'https://linkedin.com/in/anamika-ragu'
+}
 
 export const projects = [
     {

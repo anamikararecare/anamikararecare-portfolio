@@ -1,24 +1,27 @@
 import gsap from 'gsap';
 import { ScrollTrigger, SplitText } from 'gsap/all';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Navbar from './components/NavBar';
-import Hero from './components/Hero';
-import About from './components/About'
-import Projects from './components/Projects'
+import { Home } from './pages/Home';
+import Projects from './pages/Projects';
+import Courses from './pages/Courses';
 
 // remember to git pull origin main
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
-const App = () => {
+function App() {
   return (
-    <main>
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-    </main>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/courses" element={<Courses />} />
+      </Routes>
+    </Router>
   )
 }
+
+
 
 export default App;
