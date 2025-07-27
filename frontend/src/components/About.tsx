@@ -1,4 +1,5 @@
 import { identityCards } from "../../constants/index";
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -34,10 +35,12 @@ const About = () => {
                                     zIndex: index
                                 }}
                             >
-                                <img
-                                    src={card.src}
-                                    alt={card.alt}
-                                />
+                                < Link to={card.route} >
+                                    <img
+                                        src={card.src}
+                                        alt={card.alt}
+                                    />
+                                </Link>
                             </div>
                         );
                     })}

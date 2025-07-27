@@ -7,9 +7,9 @@ const Projects = () => {
         <main>
             <Navbar />
             <section id="projects">
-                <div className="max-w-7xl mx-auto flex h-screen py-22">
+                <div className="max-w-7xl mx-auto flex h-dvh py-22">
                     {/* Left Sidebar - Pinned */}
-                    <div className="w-[30%] p-8 border-r border-gray-200 overflow-y-auto">
+                    <div className="w-[30%] p-8 border-gray-200 border-r-4 overflow-y-auto">
                         <div className="sticky top-0">
                             <h1 className="text-4xl font-serif mb-6 text-black italic">BUILDER</h1>
                             <p className="text-gray-700 mb-8 leading-relaxed text-md font-mono">

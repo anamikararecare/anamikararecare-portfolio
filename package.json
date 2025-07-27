@@ -2,7 +2,8 @@
   "dependencies": {
     "@craco/craco": "^5.9.0",
     "gsap": "^3.13.0",
-    "motion": "^12.23.6"
+    "motion": "^12.23.6",
+    "react-router-hash-link": "^2.4.3"
   },
   "name": "my-portfolio",
   "version": "1.0.0",
@@ -15,6 +16,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/react-router-hash-link": "^2.4.9",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11"

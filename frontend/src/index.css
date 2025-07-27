@@ -66,11 +66,36 @@ body {
     @apply relative z-10 min-h-dvh w-full border border-transparent;
 
     h1 {
-      @apply md:text-[3vw] leading-none pt-14 pl-45 text-lg font-mono text-gray-600;
+      @apply font-mono text-gray-600;
     }
 
     h2 {
-      @apply md:text-[5vw] md:pl-300 pl-200 text-right text-lg font-mono text-gray-600;
+      @apply font-mono text-gray-600;
     } /* fix this*/
+}
+}
+
+@layer utilities {
+  .perspective {
+    perspective: 1000px;
+  }
+
+  .hero-card-3d {
+    transform-style: preserve-3d;
+    position: relative;
+    transition: transform 1s ease;
+  }
+
+  .card-face {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .card-face.back {
+    transform: rotateY(180deg);
   }
 }

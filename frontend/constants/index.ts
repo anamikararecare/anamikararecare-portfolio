@@ -2,9 +2,6 @@ export const navLinks = [
     { id: 'about', title: 'About', type: 'section' },
     { id: 'projects', title: 'Projects', type: 'route' },
     { id: 'courses', title: 'Courses', type: 'route' },
-    { id: 'articles', title: 'Articles', type: 'route' },
-    { id: 'experience', title: 'Experience', type: 'section' },
-    { id: 'future', title: 'Future Generator', type: 'section' },
     { id: 'contact', title: 'Contact', type: 'section' },
 ];
 
@@ -14,11 +11,11 @@ export const leftIcons = [
 ]
 
 export const identityCards = [
-    { id: 'builder', src: '/cards/builder_card.png', alt: 'Builder Card' },
-    { id: 'learner', src: '/cards/learner_card.png', alt: 'Learner Card' },
-    { id: 'writer', src: '/cards/writer_card.png', alt: 'Writer Card' },
-    { id: 'advocate', src: '/cards/advocate_card.png', alt: 'Advocate Card' },
-    { id: 'dreamer', src: '/cards/dreamer_card.png', alt: 'Dreamer Card' }
+    { id: 'builder', src: '/cards/builder_card.png', alt: 'Builder Card', route: '/projects' },
+    { id: 'learner', src: '/cards/learner_card.png', alt: 'Learner Card', route: '/courses' },
+    { id: 'writer', src: '/cards/writer_card.png', alt: 'Writer Card', route: '/articles' },
+    { id: 'advocate', src: '/cards/advocate_card.png', alt: 'Advocate Card', route: '/work-experience' },
+    { id: 'dreamer', src: '/cards/dreamer_card.png', alt: 'Dreamer Card', route: 'future' }
 ]
 
 export const contactCards = [
