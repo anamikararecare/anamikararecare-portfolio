@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { contactCards, socialLinks } from '../../constants/index';
+import { contactCards } from '../../constants/index';
 
 
 const TEXT_PATTERN = 'EMAIL (OFFICIAL) | GMAIL | DISCORD | GITHUB | LINKEDIN | EMAIL (OFFICIAL) | GMAIL | DISCORD';
