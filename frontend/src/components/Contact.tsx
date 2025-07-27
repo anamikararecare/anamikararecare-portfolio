@@ -132,7 +132,7 @@ const Contact: React.FC = () => {
                     {/* links incoming */}
                 </div>
 
-                <ul className="flex flex-row items-center justify-center px-6 py-4 mt-12 border-t-2">
+                <ul className="flex flex-row items-center justify-center px-6 mt-12 border-t-2">
                     {socialLinks.map((link) => (
                         <li key={link.id}>
                             <a href={link.link} target="_blank" rel="noopener noreferrer">
