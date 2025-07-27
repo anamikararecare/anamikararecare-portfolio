@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
 
 
     return (
-        <div className="min-h-screen flex items-center justify-center p-8 font-serif">
+        <div id="contact" className="min-h-screen flex items-center justify-center p-8 font-serif">
             <div className="relative w-full max-w-7xl">
                 {/* Repeating text panels */}
                 <PatternPanel side="left" />

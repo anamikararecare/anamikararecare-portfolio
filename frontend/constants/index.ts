@@ -2,6 +2,7 @@ export const navLinks = [
     { id: 'about', title: 'About', type: 'section' },
     { id: 'projects', title: 'Projects', type: 'route' },
     { id: 'courses', title: 'Courses', type: 'route' },
+    { id: 'advocacy', title: 'Advocacy', type: 'route' },
     { id: 'contact', title: 'Contact', type: 'section' },
 ];
 
@@ -13,9 +14,9 @@ export const leftIcons = [
 export const identityCards = [
     { id: 'builder', src: '/cards/builder_card.png', alt: 'Builder Card', route: '/projects' },
     { id: 'learner', src: '/cards/learner_card.png', alt: 'Learner Card', route: '/courses' },
-    { id: 'writer', src: '/cards/writer_card.png', alt: 'Writer Card', route: '/articles' },
-    { id: 'advocate', src: '/cards/advocate_card.png', alt: 'Advocate Card', route: '/work-experience' },
-    { id: 'dreamer', src: '/cards/dreamer_card.png', alt: 'Dreamer Card', route: 'future' }
+    { id: 'writer', src: '/cards/writer_card.png', alt: 'Writer Card', route: 'https://substack.com/@anamika850589' },
+    { id: 'advocate', src: '/cards/advocate_card.png', alt: 'Advocate Card', route: '/advocacy' },
+    { id: 'dreamer', src: '/cards/dreamer_card.png', alt: 'Dreamer Card', route: '/future' }
 ]
 
 export const contactCards = [
@@ -91,5 +92,24 @@ export const courses = [
         name: 'Data Analysis',
         image: 'analysis_course.png',
         reflection: `Diving deep into statistical analysis and machine learning opened up new perspectives on problem-solving. The course challenged me to think critically about data interpretation and model validation, skills that extend far beyond technical applications.`
+    }
+];
+
+export const Tskills = ["Formal Logic", "Understanding", "Complicated Problems", "Complicated Clients", "Reading the",
+    "Room", "Fine Print", "Source Code", "Language & Writing", "Problem Solving"
+]
+
+export const Tsubskills = ["Complicated Problems", "Complicated Clients", "Room", "Fine Print", "Source Code"]
+
+export const experiences = [
+    {
+        id: '1',
+        title: '[Title]',
+        date: '[Date]',
+        subtitle: '[Subtitle]',
+        content: [
+            '[Point 1]',
+            '[Point 2]'
+        ]
     }
 ];

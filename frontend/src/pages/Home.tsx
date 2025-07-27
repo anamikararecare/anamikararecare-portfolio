@@ -13,7 +13,6 @@ export const Home = () => {
         if (location.hash) {
             const target = document.querySelector(location.hash);
             if (target) {
-                // Small delay for layout/rendering to complete
                 setTimeout(() => {
                     target.scrollIntoView({ behavior: "smooth" });
                 }, 0);
