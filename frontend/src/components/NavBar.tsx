@@ -38,7 +38,7 @@ const NavBar = () => {
                 <div className="">
                     <ul className="">
                         <Link to='/' className='w-7'>
-                            <img src='./public/icons/logo.png' />
+                            <img src='./icons/logo.png' />
                         </Link>
                     </ul>
                 </div>

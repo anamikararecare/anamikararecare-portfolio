@@ -59,7 +59,7 @@ const Projects = () => {
                                     </div>
 
                                     {/* Project Preview Image */}
-                                    <div className="w-full max-w-4xl">
+                                    <div className="w-full max-w-4xl items-center">
                                         <img
                                             src={project.image}
                                             className="w-full h-auto"
