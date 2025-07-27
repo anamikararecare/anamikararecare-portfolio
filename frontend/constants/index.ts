@@ -3,6 +3,7 @@ export const navLinks = [
     { id: 'projects', title: 'Projects', type: 'route' },
     { id: 'courses', title: 'Courses', type: 'route' },
     { id: 'advocacy', title: 'Advocacy', type: 'route' },
+    { id: 'future', title: 'Future', type: 'route' },
     { id: 'contact', title: 'Contact', type: 'section' },
 ];
 
@@ -39,13 +40,13 @@ export const contactCards = [
     { id: 'builder2', src: '/cards/builder_card.png', alt: 'Builder Card' }
 ]
 
-export const socialLinks = {
-    email: 'e1385499@u.nus.edu',
-    gmail: 'anamika.ragu@gmail.com',
-    github: 'https://github.com/anamikararecare',
-    discord: 'https://discord.gg/anamikararecare',
-    linkedin: 'https://linkedin.com/in/anamika-ragu'
-}
+export const socialLinks = [
+    { id: 'email', link: 'e1385499@u.nus.edu', image: '/icons/outlook_icon.png' },
+    { id: 'gmail', link: 'anamika.ragu@gmail.com', image: '/icons/gmail_icon.png' },
+    { id: 'github', link: 'https://github.com/anamikararecare', image: '/icons/github_icon.png' },
+    { id: 'discord', link: 'https://discord.gg/anamikararecare', image: '/icons/discord_icon.png' },
+    { id: 'linkedin', link: 'https://linkedin.com/in/anamika-ragu', image: '/icons/linkedin_icon.png' }
+];
 
 export const projects = [
     {
@@ -111,5 +112,28 @@ export const experiences = [
             '[Point 1]',
             '[Point 2]'
         ]
+    }
+];
+
+export const dreams = [
+    {
+        image: "/path/to/metro-image.png", // Replace with your actual image paths
+        description: "trying every public transport system in the world"
+    },
+    {
+        image: "/path/to/dream2.png",
+        description: "building sustainable cities in every continent"
+    },
+    {
+        image: "/path/to/dream3.png",
+        description: "creating AI systems that understand human creativity"
+    },
+    {
+        image: "/path/to/dream4.png",
+        description: "designing interfaces that feel like magic"
+    },
+    {
+        image: "/path/to/dream5.png",
+        description: "connecting cultures through technology"
     }
 ];

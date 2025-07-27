@@ -11,7 +11,7 @@ const Projects = () => {
                     {/* Left Sidebar - Pinned */}
                     <div className="md:w-[30%] p-8  shadow-amber-900 md:overflow-y-auto">
                         <div className="md:sticky md:top-0">
-                            <h1 className="text-4xl font-serif mb-6 text-black italic">BUILDER</h1>
+                            <img src='/text/BUILDER.png' className="w-54 pb-8" />
                             <p className="text-gray-700 mb-8 leading-relaxed text-md font-mono">
                                 My favourite thing about engineering?
                                 The insatiable drive to keep creating better systems everywhere.

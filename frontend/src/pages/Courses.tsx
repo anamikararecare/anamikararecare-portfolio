@@ -49,10 +49,8 @@ const Courses = () => {
             <section id="courses" className="flex flex-col items-center min-h-screen">
                 {/* Pinned Header */}
                 <div className="flex flex-col items-center sticky top-0 z-10 mt-34 md:mt-27 px-8 w-full">
-                    <div className="w-full max-w-4xl mx-auto">
-                        <h1 className="text-6xl font-serif italic text-center mb-6 tracking-wide">
-                            LEARNER
-                        </h1>
+                    <div className="w-full max-w-4xl mx-auto flex flex-col items-center">
+                        <img src='/text/LEARNER.png' className="w-54 mb-6" />
                         <p className="text-center font-mono text-gray-600 max-w-2xl mx-auto leading-relaxed">
                             They say that engineers have two states: god complex or impostor
                             syndrome. I'm always trying to learn new things to justify the former.

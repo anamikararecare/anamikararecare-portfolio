@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { contactCards } from '../../constants/index';
+import { contactCards, socialLinks } from '../../constants/index';
 
 
 const TEXT_PATTERN = 'EMAIL (OFFICIAL) | GMAIL | DISCORD | GITHUB | LINKEDIN | EMAIL (OFFICIAL) | GMAIL | DISCORD';
@@ -62,21 +62,21 @@ const Contact: React.FC = () => {
     return (
         <div id="contact" className="min-h-screen flex items-center justify-center p-8 font-serif">
             <div className="relative w-full max-w-7xl">
-                {/* Repeating text panels */}
+                {/* repeating text panels */}
                 <PatternPanel side="left" />
                 <PatternPanel side="right" />
 
 
                 {/* Left-side static header & links */}
                 <div className="absolute left-0 z-10 space-y-8 text-right">
-                    <h2 className="text-5xl text-gray-800 mb-6">CONTACT ME TODAY</h2>
-                    {/* ... your existing left-side links here ... */}
+                    <img src='/text/CONTACTMETODAY.png' />
+                    {/* links incoming */}
                 </div>
 
 
-                {/* The rotating ring of cards + resume button */}
+                {/* rotating ring of cards + resume button */}
                 <div className="pointer-events-none relative z-20 flex items-center justify-center">
-                    {/* Ring of cards */}
+                    {/* ring of cards */}
                     <div className="w-96 h-96 relative">
                         {contactCards.map((card, index) => {
                             const angle =
@@ -105,7 +105,7 @@ const Contact: React.FC = () => {
                             );
                         })}
                     </div>
-                    {/* Center resume button */}
+                    {/* centre resume button */}
                     <button
                         onClick={handleResumeClick}
                         disabled={isAnimating}
@@ -126,11 +126,22 @@ const Contact: React.FC = () => {
                 </div>
 
 
-                {/* Right-side static header & links */}
+                {/* right-side static header & links */}
                 <div className="absolute right-0 top-1 z-10 space-y-8">
-                    <h2 className="text-5xl text-gray-800 mb-6">OR TOMORROW.</h2>
-                    {/* ... your existing right-side links here ... */}
+                    <img src='/text/ORTOMORROW.png' />
+                    {/* links incoming */}
                 </div>
+
+                <ul className="flex flex-row items-center justify-center px-6 py-4 mt-12 border-t-2">
+                    {socialLinks.map((link) => (
+                        <li key={link.id}>
+                            <a href={link.link} target="_blank" rel="noopener noreferrer">
+                                <img src={link.image} alt={link.id} className="w-25 p-5 hover:scale-110 opacity-80 hover:opacity-100" />
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+
             </div>
         </div>
     );
