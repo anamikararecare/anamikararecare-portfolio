@@ -7,10 +7,10 @@ const Projects = () => {
         <main>
             <Navbar />
             <section id="projects">
-                <div className="max-w-7xl mx-auto flex h-dvh py-22">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row h-dvh mt-22">
                     {/* Left Sidebar - Pinned */}
-                    <div className="w-[30%] p-8 border-gray-200 border-r-4 overflow-y-auto">
-                        <div className="sticky top-0">
+                    <div className="md:w-[30%] p-8  shadow-amber-900 md:overflow-y-auto">
+                        <div className="md:sticky md:top-0">
                             <h1 className="text-4xl font-serif mb-6 text-black italic">BUILDER</h1>
                             <p className="text-gray-700 mb-8 leading-relaxed text-md font-mono">
                                 My favourite thing about engineering?
@@ -26,7 +26,7 @@ const Projects = () => {
                                             key={index}
                                             className={`px-2 py-1 rounded text-xs font-medium ${langs.includes(skill)
                                                 ? 'bg-amber-950 text-amber-50'
-                                                : 'bg-amber-50 text-amber-950 stroke-amber-950'
+                                                : 'bg-amber-50 text-amber-950 border border-amber-950'
                                                 }`}
                                         >
                                             {skill}
@@ -38,7 +38,7 @@ const Projects = () => {
                     </div>
 
                     {/* Right Content - Scrollable */}
-                    <div className="flex-1 overflow-y-auto p-8 bg-white">
+                    <div className="flex-1 md:overflow-y-auto p-8 bg-white">
                         <div className="space-y-12">
                             {projects.map((project) => (
                                 <div key={project.id} className="space-y-6">

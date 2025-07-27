@@ -1,4 +1,4 @@
-import { navLinks, leftIcons } from "../../constants/index";
+import { navLinks } from "../../constants/index";
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import gsap from 'gsap';
@@ -34,23 +34,12 @@ const NavBar = () => {
     })
     return (
         <nav>
-            <div className="flex items-center justify-between px-15">
-                {/* Left group - the icons  */}
-                <div className="flex items-center gap-4">
-                    <ul className="flex items-center">
-                        {leftIcons.map((icon) => (
-                            <li key={icon.id}>
-                                {icon.type === 'route' ? (
-                                    <Link to={`/${icon.id}`}>
-                                        <img src={icon.src} alt={icon.alt} className="navbar-icon" />
-                                    </Link>
-                                ) : (
-                                    <Link to={`/#${icon.id}`}>
-                                        <img src={icon.src} alt={icon.alt} className="navbar-icon" />
-                                    </Link>
-                                )}
-                            </li>
-                        ))}
+            <div className="flex md:items-center justify-between px-15">
+                <div className="">
+                    <ul className="">
+                        <Link to='/' className='w-7'>
+                            <img src='./public/icons/logo.png' />
+                        </Link>
                     </ul>
                 </div>
 

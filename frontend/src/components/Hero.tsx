@@ -67,17 +67,17 @@ const Hero = () => {
             <section className="w-full px-5 py-16">
                 <div className="max-w-6xl mx-auto flex flex-col items-center">
                     {/* Information Card */}
-                    <div className="info-card relative max-w-md w-full mb-16">
+                    <div className="info-card relative max-w-md w-full mb-1 ml-30 md:ml-0">
                         {/* PNG Background */}
                         <img
                             src="/cards/info_card_blank.png"
                             alt="info card background"
-                            className="w-full h-auto"
+                            className="sm:w-xs md:w-full h-auto"
                         />
 
                         {/* Text Overlay */}
                         <div className="absolute inset-0 p-8 flex flex-col justify-between">
-                            <div className="space-y-1 p-6 font-mono text-2xl text-gray-800">
+                            <div className="space-y-1 p-6 font-mono text-xl md:text-2xl text-gray-800">
                                 <div>currently:</div>
                                 <div>Y2</div>
                                 <div>Industrial</div>
@@ -89,7 +89,7 @@ const Hero = () => {
                                 <div>NUS</div>
                             </div>
 
-                            <div className="text-right font-mono text-2xl text-gray-800 pr-6 pb-6">
+                            <div className="text-right font-mono text-sm md:text-2xl text-gray-800 md:pr-6 md:pb-6">
                                 <div>curious</div>
                                 <div>about:</div>
                                 <div>everything</div>
@@ -99,7 +99,7 @@ const Hero = () => {
 
                     {/* Scroll Indicator */}
                     <a href="/#about">
-                        <div className="scroll-indicator w-12 h-12 rounded-full border border-gray-400 flex items-center justify-center cursor-pointer">
+                        <div className="scroll-indicator w-12 h-12 rounded-full border border-gray-400 cursor-pointer">
                             < img src="/icons/scroll_arrow_icon.png" />
                         </div>
                     </a>

@@ -72,3 +72,24 @@ export const skills = ["Python", "PyTorch", "Django", "NumPy", "pandas", "MatPlo
     "Swift", "VBA Office"]
 
 export const langs = ['Python', 'JavaScript', 'C++', 'CSS', 'Swift', 'VBA Office', 'HTML']
+
+export const courses = [
+    {
+        id: 'git',
+        name: 'git teach',
+        image: 'git_course.png',
+        reflection: `Learning Git has been transformative for my development workflow. Understanding version control not only improved my code management but also taught me the importance of clear commit messages and collaborative development practices.`
+    },
+    {
+        id: 'design',
+        name: 'Design Systems',
+        image: 'design_course.png',
+        reflection: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla elementum semper. Aenean vel odio mollis, dapibus nisl sed, euismod nulla. Vivamus et feugiat lacus. Duis pulvinar velit nec lorem finibus cursus. Sed at orci vel neque semper lacinia. Aenean aliquam magna ex, eget vehicula libero tincidunt mollis. Mauris non dolor vitae justo pharetra semper sit amet sed libero.`
+    },
+    {
+        id: 'analysis',
+        name: 'Data Analysis',
+        image: 'analysis_course.png',
+        reflection: `Diving deep into statistical analysis and machine learning opened up new perspectives on problem-solving. The course challenged me to think critically about data interpretation and model validation, skills that extend far beyond technical applications.`
+    }
+];

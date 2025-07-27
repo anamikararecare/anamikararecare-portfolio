@@ -29,14 +29,12 @@ const PatternPanel: React.FC<{ side: 'left' | 'right'; }> = ({ side }) => {
     return (
         <div
             ref={ref}
-            className={`
-        absolute ${side}-0 w-130 h-96 overflow-hidden z-0 py-14
-      `}
+            className={`absolute ${side}-0 w-130 h-96 overflow-hidden z-0 py-14`}
         >
             {Array.from({ length: reps }).map((_, i) => (
                 <div
                     key={i}
-                    className="text-2xl italic whitespace-wrap mb-2 text-gray-800"
+                    className="text-2xl italic whitespace-wrap mb-2 text-gray-500 hover:text-gray-800 hover:bg-amber-300"
                 >
                     {TEXT_PATTERN}
                 </div>
@@ -62,7 +60,7 @@ const Contact: React.FC = () => {
 
 
     return (
-        <div className="min-h-screen flex items-center p-8 font-serif">
+        <div className="min-h-screen flex items-center justify-center p-8 font-serif">
             <div className="relative w-full max-w-7xl">
                 {/* Repeating text panels */}
                 <PatternPanel side="left" />
@@ -77,7 +75,7 @@ const Contact: React.FC = () => {
 
 
                 {/* The rotating ring of cards + resume button */}
-                <div className="relative z-20 flex items-center justify-center">
+                <div className="pointer-events-none relative z-20 flex items-center justify-center">
                     {/* Ring of cards */}
                     <div className="w-96 h-96 relative">
                         {contactCards.map((card, index) => {
@@ -111,15 +109,15 @@ const Contact: React.FC = () => {
                     <button
                         onClick={handleResumeClick}
                         disabled={isAnimating}
-                        className={`
-              absolute top-1/2 left-49/100 
-              -translate-x-1/2 -translate-y-1/2
-              w-32 h-32 bg-white rounded-full 
-              flex flex-col items-center justify-center text-center
-              hover:shadow-xl transition-all duration-300
-              hover:scale-105
-              ${isAnimating ? 'animate-pulse' : ''}
-            `}
+                        className={`pointer-events-auto
+                            absolute top-1/2 left-49/100
+                            -translate-x-1/2 -translate-y-1/2
+                            w-32 h-32 bg-white rounded-full
+                            flex flex-col items-center justify-center text-center
+                            hover:shadow-xl transition-all duration-300
+                            hover:scale-105
+                            ${isAnimating ? 'animate-pulse' : ''}
+                            `}
                     >
                         <span className="text-sm font-mono text-gray-700">click</span>
                         <span className="text-sm font-mono text-gray-700">for</span>
@@ -140,7 +138,6 @@ const Contact: React.FC = () => {
 
 
 export default Contact;
-
 
 
 
