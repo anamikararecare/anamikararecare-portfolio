@@ -106,10 +106,12 @@ const Contact: React.FC = () => {
                         })}
                     </div>
                     {/* centre resume button */}
-                    <button
-                        onClick={handleResumeClick}
-                        disabled={isAnimating}
-                        className={`pointer-events-auto
+                    <a href={'https://drive.google.com/file/d/1S1Q0Z0Ls3TOyuuZclxStIZSIzJDP-zH6/view?usp=sharing'}
+                        target="_blank" rel="noopener noreferrer">
+                        <button
+                            onClick={handleResumeClick}
+                            disabled={isAnimating}
+                            className={`pointer-events-auto
                             absolute top-1/2 left-49/100
                             -translate-x-1/2 -translate-y-1/2
                             w-32 h-32 bg-white rounded-full
@@ -118,11 +120,12 @@ const Contact: React.FC = () => {
                             hover:scale-105
                             ${isAnimating ? 'animate-pulse' : ''}
                             `}
-                    >
-                        <span className="text-sm font-mono text-gray-700">click</span>
-                        <span className="text-sm font-mono text-gray-700">for</span>
-                        <span className="text-sm font-mono text-gray-700">resume</span>
-                    </button>
+                        >
+                            <span className="text-sm font-mono text-gray-700">click</span>
+                            <span className="text-sm font-mono text-gray-700">for</span>
+                            <span className="text-sm font-mono text-gray-700">resume</span>
+                        </button>
+                    </a>
                 </div>
 
 
@@ -143,7 +146,7 @@ const Contact: React.FC = () => {
                 </ul>
 
             </div>
-        </div>
+        </div >
     );
 };
 

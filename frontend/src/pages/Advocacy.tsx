@@ -53,7 +53,7 @@ const Advocacy = () => {
                                 {experiences.map((experience) => (
                                     <article key={experience.id} className="space-y-4">
                                         <header>
-                                            <h2 className="text-2xl font-bold text-black">
+                                            <h2 className="text-2xl font-bold text-black pb-1">
                                                 {experience.title} <span className="text-gray-500 text-sm font-mono">{experience.date}</span>
                                             </h2>
                                             <p className="text-gray-600 italic">{experience.subtitle}</p>

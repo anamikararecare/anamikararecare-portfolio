@@ -72,6 +72,9 @@ const Future = () => {
                     <p className="text-md font-mono leading-relaxed mb-7 text-gray-800">
                         {currentDream.description}
                     </p>
+                    <p className="text-md font-mono leading-relaxed mb-7 text-gray-800">
+                        {currentDream.subtitle}
+                    </p>
 
                     {/* Social media icons section */}
                     <div className="p-3 rounded-lg border-t-1">
