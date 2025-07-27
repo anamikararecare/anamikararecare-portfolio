@@ -55,13 +55,13 @@ const NavBar = () => {
                 </div>
 
                 {/* Desktop nav links - hidden on mobile */}
-                <ul className="hidden md:flex items-center gap-6 ">
+                <ul className="hidden md:flex items-center gap-6 text-sm">
                     {navLinks.map((link) => (
-                        <li key={link.id}>
+                        <li key={link.id} className="text-sm">
                             {link.type === 'route' ? (
                                 <Link to={`/${link.id}`}>{link.title}</Link>
                             ) : (
-                                <button onClick={() => handleSectionClick(link.id)}>
+                                <button onClick={() => handleSectionClick(link.id)} className="text-sm">
                                     {link.title}
                                 </button>
                             )}
