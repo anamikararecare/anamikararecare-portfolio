@@ -92,7 +92,7 @@ export const projects = [
         description: "As part of the Electrical team in Hornet, I worked on implementing underwater communications for our autonomous underwater vehicle (AUV) to compete in the Singapore AUV Challenge 2025. This entailed cohesively programming various MCUs including the ESP32 & the Jetson Xavier NX to host I2C, SPI, and acoustic communications well. As someone with no background in electronics starting out, I gained invaluable skills in self-directed learning by doing alongside the hard skills listed above.",
         image: "project_previews/hornet_preview.png",
         tags: ["PCB Design (Altium)", "Embedded Programming", "C++", "Arduino", "CAD Fusion360"],
-        visitLink: "https://www.instagram.com/p/DHdwkObTXuq/?utm_source=ig_web_copy_link&igsh=MWxxcWQzazNmaWsxMg=="
+        visitLink: "https://github.com/Fauxtarantula/Comms_CAN/tree/main"
     }
 ]
 
