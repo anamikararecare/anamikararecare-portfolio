@@ -203,6 +203,18 @@ export const experiences = [
     },
     {
         id: '2',
+        title: 'NUS Engineers Without Borders',
+        date: '2025',
+        subtitle: 'Engineering Operations Head',
+        content: [
+            'Headed team of 16 undergraduates and built (1) light-sensitive solar-panelled lamps & (2) 750-metre water canal in Dang Village, Hà Giang, Vietnam; 5 months planning, 2 weeks on-site execution',
+            'Liaised with YESD Travel to align project with village’s needs',
+            'Established a streamlined case-file documentation pipeline for residents of the shelter; especially crucial for women who were prevented from holding crucial documentation, such as their passports',
+            'Engaged in creative problem-solving within tight budget & logistical restrictions to create a sustainable solution'
+        ]
+    },
+    {
+        id: '2',
         title: 'Ministry of Law, Singapore',
         date: '2025',
         subtitle: '6 Month Policy Internship',
